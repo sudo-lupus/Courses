@@ -11,7 +11,7 @@ for i in range(2, a // 2):
     if(a % i == 0):
         for j in range(2, i // 2):
             print(j)
-            if(j % i == 0):
+            if(j % i != 0):
                 biggest_prime = j
                 print(j)
 
