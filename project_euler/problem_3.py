@@ -5,14 +5,15 @@ What is the largest prime factor of the number 600851475143 ?
 '''
 
 a = 600851475143
-biggest_prime = 2
 
-for i in range(2, a // 2):
-    if(a % i == 0):
-        for j in range(2, i // 2):
-            print(j)
-            if(j % i != 0):
-                biggest_prime = j
-                print(j)
+n = int(a // 2)
+found_prime = False
 
-print(biggest_prime)
+while found_prime == False:
+    if n % 2 == 0:
+        n -= 1
+    if(all(n % i != 0 for i in range(2, n))):
+        break
+    n -= 2
+
+print(n)
