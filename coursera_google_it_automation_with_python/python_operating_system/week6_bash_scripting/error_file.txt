@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/lupus/repos/Courses/coursera_google_it_automation_with_python/python_operating_system/week6_bash_scripting/./streams_err.py", line 5, in <module>
+    raise ValueError("Now we generate an error to STDERR")
+ValueError: Now we generate an error to STDERR
