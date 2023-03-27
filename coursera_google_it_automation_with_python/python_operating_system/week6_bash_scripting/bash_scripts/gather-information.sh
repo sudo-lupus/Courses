@@ -9,6 +9,6 @@ echo "FREE"; free; echo $line
 
 echo "WHO"; whoami; echo $line
 
-# echo "Public IP"; curl icanhazip.com; echo $line
+echo "Public IP"; curl icanhazip.com; echo $line
 
 echo "Finishing at: $(date)"
